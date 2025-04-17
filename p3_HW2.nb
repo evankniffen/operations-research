@@ -1,0 +1,28 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+BoxData[{RowBox[{"cmax",":=",RowBox[{"{",RowBox[
+{"1000",",","1800",",","2000",",","1300",",","2000",",","2200",",","800"}],"}"}]}],"\n",RowBox[
+{"cmin",":=",RowBox[{"{",RowBox[{"1600",",","2400",",","2900",",","1900",",","3800",",","2900",",","1300"}],"}"}]}],"\n",RowBox[
+{"tmax",":=",RowBox[{"{",RowBox[{"12",",","16",",","24",",","20",",","16",",","16",",","12"}],"}"}]}],"\n",RowBox[
+{"tmin",":=",RowBox[{"{",RowBox[{"6",",","8",",","16",",","14",",","4",",","12",",","2"}],"}"}]}],"\n",RowBox[
+{RowBox[{"f","[","x_","]"}],":="," ",RowBox[{RowBox[{RowBox[{"(",RowBox[{RowBox[{"Indexed","[",RowBox[
+{"tmax",",","x"}],"]"}],"-",RowBox[{"Indexed","[",RowBox[{"a",",","x"}],"]"}]}],")"}],RowBox[
+{RowBox[{"(",RowBox[{RowBox[{"Indexed","[",RowBox[{"cmax",",","x"}],"]"}],"-",RowBox[
+{"Indexed","[",RowBox[{"cmin",",","x"}],"]"}]}],")"}],"/",RowBox[{"(",RowBox[{RowBox[
+{"Indexed","[",RowBox[{"tmax",",","x"}],"]"}],"-",RowBox[{"Indexed","[",RowBox[{"tmin",",","x"}],"]"}]}],")"}]}]}],"+",RowBox[
+{"Indexed","[",RowBox[{"cmin",",","x"}],"]"}]}]}],"\n",RowBox[{RowBox[{"Expand","[",RowBox[
+{"Sum","[",RowBox[{RowBox[{"f","[","n","]"}],",",RowBox[{"{",RowBox[{"n",",","1",",","7"}],"}"}]}],"]"}],"]"}],"\n"}]}],
+"Input",CellLabel -> "In[38]:= ",ExpressionUUID -> "2a0c852f-25ed-4cb6-ba96-50928a64ce88"],Cell[
+BoxData[
+RowBox[{"3900","+",RowBox[{"100"," ",TemplateBox[{"a","1"},"IndexedDefault"]}],"+",RowBox[
+{"75"," ",TemplateBox[{"a","2"},"IndexedDefault"]}],"+",FractionBox[RowBox[{"225"," ",TemplateBox[
+{"a","3"},"IndexedDefault"]}],"2"],"+",RowBox[{"100"," ",TemplateBox[{"a","4"},"IndexedDefault"]}],"+",RowBox[
+{"150"," ",TemplateBox[{"a","5"},"IndexedDefault"]}],"+",RowBox[{"175"," ",TemplateBox[
+{"a","6"},"IndexedDefault"]}],"+",RowBox[{"50"," ",TemplateBox[{"a","7"},"IndexedDefault"]}]}],
+StandardForm],"Output",CellLabel -> "Out[43]= ",ExpressionUUID -> "10c3b113-5a17-43f4-b8e8-c3dd0abf57ba"]},
+Open],ExpressionUUID -> "bee46b5c-f032-4b97-8d14-1cb87bfff5b3"],Cell[
+BoxData[""],
+"Input",CellLabel -> "In[25]:= ",ExpressionUUID -> "250a69f0-eac6-44d1-831d-ecc416074c27"],Cell[
+BoxData[
+""],"Input",NumberMarks -> False,CellLabel -> "In[18]:= ",ExpressionUUID -> "3e4146ef-8e69-4fed-8900-7102255b7be4"]},
+StyleDefinitions -> "Default.nb",FrontEndVersion -> "14.2 for Wolfram Cloud 1.70.1 (December 30, 2024)"]
